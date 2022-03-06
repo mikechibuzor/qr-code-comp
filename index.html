@@ -13,21 +13,34 @@
     />
 
     <title>Frontend Mentor | QR code component</title>
+    <script src="https://unpkg.com/vue@3"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <section class="qr-container">
-        <div class="qr-image">
-          <img src="./images/image-qr-code.png" alt="qr-image" />
-        </div>
-        <div class="qr-text">
-          <h2>Improve your frontend skills by building projects</h2>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
-        </div>
-      </section>
+    <div id="app">
+      <div class="wrapper of">
+        <section class="qr-container">
+          <div class="qr-image">
+            <img src="./images/image-qr-code.png" alt="qr-image" />
+          </div>
+          <div class="qr-text">
+            <h2>Improve your frontend skills by building projects</h2>
+            <p>
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
+
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          message: "Hello Vue!",
+        };
+      },
+    }).mount("#app");
+  </script>
 </html>
